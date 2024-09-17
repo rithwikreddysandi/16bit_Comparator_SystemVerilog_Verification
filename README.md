@@ -6,11 +6,10 @@
 
 
 # Output Result
-![image](https://github.com/user-attachments/assets/310ceb36-9f7d-486f-880f-616086b7bd6e)
-<p> 
+![image](https://github.com/user-attachments/assets/310ceb36-9f7d-486f-880f-616086b7bd6e) <br>
 
+<br>
 
-</p>
 
 <h3>Question:</h3>
 <p>What is a 16-bit comparator?</p>
