@@ -1,0 +1,53 @@
+`include "comp.v"
+`include "comp_int.sv"
+`include "comp_cfg.sv"
+`include "comp_tx.sv"
+`include "comp_ckr.sv"
+`include "comp_cov.sv"
+`include "comp_mon.sv"
+`include "comp_bfm.sv"
+`include "comp_gen.sv"
+`include "comp_env.sv"
+`include "comp_tb.sv"
+
+module top;
+  
+  logic [15:0] a,b;
+  logic [0:0] less, equal, greater;
+  
+  comp_int inf();
+  
+  initial begin
+    comp_cfg::vif = inf;
+  end
+
+  comp dut (
+    .a(inf.a), 
+    .b(inf.b), 
+    .less(inf.less), 
+    .equal(inf.equal), 
+    .greater(inf.greater)
+  );
+  
+
+  comp_tb tb();
+
+  initial begin
+    repeat (20) begin
+     
+    inf.a = $random;
+    inf.b = $random;
+      #10; inf.a = 16'h1234; inf.b = 16'h1234;
+     //#10 inf.a = 16'h5678; inf.b = 16'h1234;
+     //#10 inf.a = 16'hAAAA; inf.b = 16'hAAAA;
+    #10;
+    end
+    $finish;
+  end
+
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(1, top.dut);
+  end
+
+endmodule

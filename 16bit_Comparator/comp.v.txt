@@ -1,0 +1,34 @@
+/*                                            SYSTEM VERILOG AND UVM 
+                                            16 bit COMPARATOR PROJECT                                                 */
+
+module comp(
+    input [15:0] a, b,   
+  output reg[0:0] less, equal, greater 
+);
+
+  always_comb begin
+    less = 0;
+    equal = 0;
+    greater = 0;
+    
+    if (a < b) begin
+      less = 1;
+      equal = 0;
+      greater = 0;
+    end
+    
+    else if (a == b) begin
+      less = 0;
+      equal = 1;
+      greater = 0;
+    end
+    
+    else begin
+      less = 0;
+      equal = 0;
+      greater = 1;
+    end
+    
+  end
+  
+endmodule
