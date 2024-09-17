@@ -8,8 +8,11 @@
 # Output Result
 ![image](https://github.com/user-attachments/assets/310ceb36-9f7d-486f-880f-616086b7bd6e)
 
-<br>
-# What is 16bit Comparator?
-- It is a comparator which is used to compare two binary numbers with each of 16 bits.
-<br>
+
+<h3>Question:</h3>
+<p>What is a 16-bit comparator?</p>
+
+<h3>Answer:</h3>
+<p>A 16-bit comparator is used to compare two binary numbers, each with 16 bits. It determines whether one number is greater than, equal to, or less than the other.</p>
+
 
