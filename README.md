@@ -10,4 +10,4 @@
 
 
 # What is 16bit Comparator?
-~ It is a comparator which is used to compare two binary numbers with each of 16 bits.
+- It is a comparator which is used to compare two binary numbers with each of 16 bits.
