@@ -6,9 +6,9 @@ This repository contains the design and verification environment for the 16-bit 
 
 The 16-bit comparator is a digital circuit designed to compare two 16-bit binary numbers. It provides three outputs to indicate the relationship between the two numbers:
 
-- *A < B*: High (1) if A is less than B.
-- *A = B*: High (1) if A is equal to B.
-- *A > B*: High (1) if A is greater than B.
+- *`A < B`*: High (1) if A is less than B.
+- *`A = B`*: High (1) if A is equal to B.
+- *`A > B`*: High (1) if A is greater than B.
 
 
 ## Files
